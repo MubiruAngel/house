@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+    <script defer src="/static/script/scripts.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>    
+<body>
+    <style>
+        nav {
+            font-weight: bolder;
+        }
+    </style>
+<header>
+    <nav style="font-size: 30px; color:rgb(0, 0, 0); text-emphasis-color: rgb(255, 0, 0); text-align: right;">
+        <a href="http://127.0.0.1:5000">Home</a> ||
+        <a href="/contact">Contact us</a> ||
+        <a href="/about">About us</a> ||
+        <a href="/feedback">Feedback</a>
+    </nav>
+    <center>{% block header %}{% endblock %}</center>
+</header>
+<hr style="font-size: 20px ;"/>
+    {% block body %}
+    {% endblock %}
+</body>
+<br/>
+<center><footer style="font-weight: bolder; color: rgb(0, 0, 0); background-color: rgb(0, 183, 255);">©The House Qatar 2022<br>
+    All rights reserved
+
+</footer>
+</center>
+</html>

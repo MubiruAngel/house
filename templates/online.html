@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the house online</title>
+    <header style="background-image: url(/static/chicken.jpg);">
+        <h1 style="font-size: 50px; font-weight:bolder;color:rgb(4, 0, 255);text-align: center;">WELCOME TO <mark>THE HOUSE</mark> ONLINE</h1>
+        <p style="text-align: center;"><img src="/static/thehouse.jpg" width="50%" height="30%" ></p>
+    </header>
+</head>
+<body>
+    <style>
+        div.content{
+            text-align: left;
+            background-color: brown;
+            border-width: 250px;
+            padding: 10%;
+            margin: 10%;
+            
+
+        }
+        div.middle {
+            text-align: center;
+        }
+        button {
+            font-weight: bolder;
+            font-size: 20px;
+            color:black;
+        }
+    </style>
+    <div class="content">
+        <p id="added"></p>
+        <p><img src="/static/cake.jpg" width="250px"height="282px" id="cakephoto">
+            <button id="carrotcake" onclick="return add()">Add to cart</button>
+            <img src="/static/1.jpg" width="250px" height="282px">
+            <button id="beef" onclick="return add1()">Add to cart</button>
+            <img src="/static/2.jpg" width="250px" height="282px">
+            <button id="mashroom" onclick="return add2()">Add to cart</button>  <br/><br/><img src="/static/3.jpg" width="250px" height="282px">
+            <img src="/static/4.jpg" width="250px" height="282px">  <img src="/static/5.jpg" width="250px" height="282px"></p>
+    </div>
+    <script>
+        var cart = []
+        
+        function add(){
+            var cake = document.getElementById('carrotcake').style.backgroundColor="green"
+            cake = document.getElementById('carrotcake').innerText="Added to cart"
+            cart.push(carrotcake)
+            console.log(cart)
+
+        }
+        function add1() {
+            var cake1 = document.getElementById('beef').style.backgroundColor='green'
+            cake1 = document.getElementById('beef').innerText='added to cart'
+            cart.push(beef)
+            console.log(cart)
+        }
+        function add2(){
+            var mashroom = document.getElementById('mashroom').style.backgroundColor="green"
+            mashroom = document.getElementById('mashroom').innerText='added to cart'
+            cart.push(mashroom)
+            console.log(cart)
+        }
+    </script>
+    
+
+
+</body>
+</html>
